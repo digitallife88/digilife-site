@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>數碼生活工作室 Digilife Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f9ff;
+      color: #111;
+      scroll-behavior: smooth;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .animated-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .hero {
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 60px;
+      position: relative;
+    }
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      color: #aad4ff;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services {
+      background: #eef6ff;
+    }
+    .service-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .service {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    .service img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .service-content {
+      padding: 20px;
+    }
+    .service-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+    footer {
+      background-color: #002d4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 100px;
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <section class="hero">
+    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942156.png" class="logo" alt="數碼生活 Logo" />
+    <h1>數碼生活工作室</h1>
+    <p>打造安全、高效的數位環境</p>
+  </section>
+  <section class="services">
+    <h2>我們的服務</h2>
+    <div class="service-items">
+      <div class="service">
+        <img src="https://plus.unsplash.com/premium_photo-1661964127131-e867864a8f83?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3" alt="資料庫維護" />
+        <div class="service-content">
+          <h3>資料庫維護</h3>
+          <p>優化效能、定期備份、權限管理</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="網路建置" />
+        <div class="service-content">
+          <h3>網路建置</h3>
+          <p>從零規劃企業內外網，穩定連線體驗</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 數碼生活工作室 | Digilife Studio. All rights reserved.
+  </footer>
+</body>
+</html>
